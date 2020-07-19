@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Breast Cancer Prediction</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Breast Cancer Predictor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-3">
+        <h1>Breast Cancer Predictor</h1>
+
+        <form action="/" method="POST">
+
+            <div class="form-group">
+                <label for="Mean_Radius">Mean Radius</label>
+                <input type="text" class="form-control" name="Mean_Radius" id="Mean_Radius"
+                    placeholder="Enter Mean Radius">
+            </div>
+
+            <div class="form-group">
+                <label for="Mean_Texture">Mean Texture</label>
+                <input type="text" class="form-control" name="Mean_Texture" id="Mean_Texture"
+                    placeholder="Enter Mean Texture">
+            </div>
+
+            <div class="form-group">
+                <label for="Mean_Perimeter">Mean Perimeter</label>
+                <input type="text" class="form-control" name="Mean_Perimeter" id="Mean_Perimeter"
+                    placeholder="Enter Mean Perimeter">
+            </div>
+
+            <div class="form-group">
+                <label for="Mean_Area">Mean Area</label>
+                <input type="text" class="form-control" name="Mean_Area" id="Mean_Area" placeholder="Enter Mean Area">
+            </div>
+
+            <div class="form-group">
+                <label for="Mean_Smoothness">Mean Smoothness</label>
+                <input type="text" class="form-control" name="Mean_Smoothness" id="Mean_Smoothness"
+                    placeholder="Enter Mean Smoothness">
+            </div>
+
+            <div class="form-group">
+                <label for="Mean_Compactness">Mean Compactness</label>
+                <input type="text" class="form-control" name="Mean_Compactness" id="Mean_Compactness"
+                    placeholder="Enter Mean Compactness">
+            </div>
+
+            <div class="form-group">
+                <label for="Mean_Concavity">Mean Concavity</label>
+                <input type="text" class="form-control" name="Mean_Concavity" id="Mean_Concavity"
+                    placeholder="Enter Mean Concavity">
+            </div>
+
+            <div class="form-group">
+                <label for="Mean_Concave_Points">Mean Concave Points</label>
+                <input type="text" class="form-control" name="Mean_Concave_Points" id="Mean_Concave_Points"
+                    placeholder="Enter Mean Concave Points">
+            </div>
+
+            <div class="form-group">
+                <label for="Mean_Symmetry">Mean Symmetry</label>
+                <input type="text" class="form-control" name="Mean_Symmetry" id="Mean_Symmetry"
+                    placeholder="Enter Mean Symmetry">
+            </div>
+
+            <div class="form-group">
+                <label for="Mean_Fractal_Dimension">Mean Fractal Dimension</label>
+                <input type="text" class="form-control" name="Mean_Fractal_Dimension" id="Mean_Fractal_Dimension"
+                    placeholder="Enter Mean Fractal Dimension">
+            </div>
+
+            <div class="form-group">
+                <label for="SE_Radius">SE Radius</label>
+                <input type="text" class="form-control" name="SE_Radius" id="SE_Radius" placeholder="Enter SE Radius">
+            </div>
+
+            <div class="form-group">
+                <label for="SE_Texture">SE Texture</label>
+                <input type="text" class="form-control" name="SE_Texture" id="SE_Texture"
+                    placeholder="Enter SE Texture">
+            </div>
+
+            <div class="form-group">
+                <label for="SE_Perimeter">SE Perimeter</label>
+                <input type="text" class="form-control" name="SE_Perimeter" id="SE_Perimeter"
+                    placeholder="Enter SE Perimeter">
+            </div>
+
+            <div class="form-group">
+                <label for="SE_Area">SE Area</label>
+                <input type="text" class="form-control" name="SE_Area" id="SE_Area" placeholder="Enter SE Area">
+            </div>
+
+            <div class="form-group">
+                <label for="SE_Smoothness">SE Smoothness</label>
+                <input type="text" class="form-control" name="SE_Smoothness" id="SE_Smoothness"
+                    placeholder="Enter SE Smoothness">
+            </div>
+
+            <div class="form-group">
+                <label for="SE_Compactness">SE Compactness</label>
+                <input type="text" class="form-control" name="SE_Compactness" id="SE_Compactness"
+                    placeholder="Enter SE Compactness">
+            </div>
+
+            <div class="form-group">
+                <label for="SE_Concavity">SE Concavity</label>
+                <input type="text" class="form-control" name="SE_Concavity" id="SE_Concavity"
+                    placeholder="Enter SE Concavity">
+            </div>
+
+            <div class="form-group">
+                <label for="SE_Concave_Points">SE Concave Points</label>
+                <input type="text" class="form-control" name="SE_Concave_Points" id="SE_Concave_Points"
+                    placeholder="Enter SE Concave Points">
+            </div>
+
+            <div class="form-group">
+                <label for="SE_Symmetry">SE Symmetry</label>
+                <input type="text" class="form-control" name="SE_Symmetry" id="SE_Symmetry"
+                    placeholder="Enter SE Symmetry">
+            </div>
+
+            <div class="form-group">
+                <label for="SE_Fractal_Dimension">SE Fractal Dimension</label>
+                <input type="text" class="form-control" name="SE_Fractal_Dimension" id="SE_Fractal_Dimension"
+                    placeholder="Enter SE Fractal Dimension">
+            </div>
+
+            <div class="form-group">
+                <label for="Worst_Radius">Worst Radius</label>
+                <input type="text" class="form-control" name="Worst_Radius" id="Worst_Radius"
+                    placeholder="Enter Worst Radius">
+            </div>
+
+            <div class="form-group">
+                <label for="Worst_Texture">Worst Texture</label>
+                <input type="text" class="form-control" name="Worst_Texture" id="Worst_Texture"
+                    placeholder="Enter Worst Texture">
+            </div>
+
+            <div class="form-group">
+                <label for="Worst_Perimeter">Worst Perimeter</label>
+                <input type="text" class="form-control" name="Worst_Perimeter" id="Worst_Perimeter"
+                    placeholder="Enter Worst Perimeter">
+            </div>
+
+            <div class="form-group">
+                <label for="Worst_Area">Worst Area</label>
+                <input type="text" class="form-control" name="Worst_Area" id="Worst_Area"
+                    placeholder="Enter Worst Area">
+            </div>
+
+            <div class="form-group">
+                <label for="Worst_Smoothness">Worst Smoothness</label>
+                <input type="text" class="form-control" name="Worst_Smoothness" id="Worst_Smoothness"
+                    placeholder="Enter Worst Smoothness">
+            </div>
+
+            <div class="form-group">
+                <label for="Worst_Compactness">Worst Compactness</label>
+                <input type="text" class="form-control" name="Worst_Compactness" id="Worst_Compactness"
+                    placeholder="Enter Worst Compactness">
+            </div>
+
+            <div class="form-group">
+                <label for="Worst_Concavity">Worst Concavity</label>
+                <input type="text" class="form-control" name="Worst_Concavity" id="Worst_Concavity"
+                    placeholder="Enter Worst Concavity">
+            </div>
+
+            <div class="form-group">
+                <label for="Worst_Concave_Points">Worst Concave Points</label>
+                <input type="text" class="form-control" name="Worst_Concave_Points" id="Worst_Concave_Points"
+                    placeholder="Enter Worst Concave Points">
+            </div>
+
+            <div class="form-group">
+                <label for="Worst_Symmetry">Worst Symmetry</label>
+                <input type="text" class="form-control" name="Worst_Symmetry" id="Worst_Symmetry"
+                    placeholder="Enter Worst Symmetry">
+            </div>
+
+
+            <button class="btn btn-primary">Submit</button><br><br><br><br>
+        </form>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
